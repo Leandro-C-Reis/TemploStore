@@ -1,0 +1,239 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: none;
+    
+    font-family: 'Poppins', sans-serif;
+    transition: 0.6s;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 150px;
+}
+header div * {
+    transition: 0.6s;
+}
+header div span {
+    margin: 0;
+    padding: 5px 0 0;
+    width: 35px;
+    height: 0px;
+
+    border: 1px solid #FFF;
+    transform: rotate(-90deg);
+}
+header div a {
+    margin: 0 25px;
+    font-size: 32px;
+    font-weight: 600;
+}
+header svg {
+    transition: 0.6s;
+}
+header svg path {
+    transition: 0.6s;
+    fill: #F0F0F0;
+}
+
+header.sticky {
+    height: 60px;
+    background: #FFF;
+}
+header.sticky svg {
+    height: 55px;
+    width: 200px;
+}
+header.sticky svg path {
+    fill: #000;
+}
+header.sticky a {
+    color: #000;
+}
+header.sticky span {
+    border-color: #000;
+}
+header.sticky div a {
+    margin: 0 15px;
+    font-size: 24px;
+}
+
+.info {
+    width: 100%;
+    height: 100vh;
+    background: #035162;
+}
+
+.info h3 {
+    position: absolute;
+    width: 233px;
+    height: 51px;
+    left: 215px;
+    top: 256px;
+
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #FFFFFF;
+}
+.info p {
+    position: absolute;
+    width: 615px;
+    height: 343px;
+    left: 215px;
+    top: 375px;
+
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.products {
+    width: 100%;
+    height: 950px;
+    background: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.products .card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.products .card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #2196f3;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.products .card:nth-child(2n)::before {
+    background: #FFF;
+}
+.products .card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+}
+.products .card::after {
+    content: 'Templo';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1);
+}
+.products .card .imgBx {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+.products .card .imgBx img {
+    transition: 0.5s;
+}
+.products .card:hover .imgBx img {
+    width: 70%;
+    height: 70%;
+}
+.products .card .contentBx {
+    position: relative;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 1;
+}
+.products .card .contentBx h3 {
+    color: #FFF;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.products .card .contentBx .price {
+    color: #FFF;
+
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.products .card .contentBx .buy {
+    position: relative;
+    top: 200px;
+    margin-top: 15px;
+    padding: 10px 30px;
+    
+    opacity: 0;
+    color: #FFF;
+    background: #2196f3;
+    
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    
+    transition: 0.5s;
+}
+.products .card:hover .contentBx .buy {
+    top: 0px;
+    opacity: 1;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 175px;
+    background: #000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+
+footer svg path{
+    fill: #FFF;
+}
