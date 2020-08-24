@@ -62,6 +62,7 @@ header svg path {
 header.sticky {
     height: 60px;
     background: #FFF;
+    border-bottom: 1px solid #E0E0E0;
 }
 header.sticky svg {
     height: 55px;
@@ -85,26 +86,23 @@ header.sticky div a {
     width: 100%;
     height: 100vh;
     background: #035162;
+    padding-left: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .info h3 {
-    position: absolute;
-    width: 233px;
-    height: 51px;
-    left: 215px;
-    top: 256px;
-
     font-size: 48px;
     line-height: 56px;
+    margin-bottom: 30px;
 
     color: #FFFFFF;
 }
 .info p {
-    position: absolute;
     width: 615px;
-    height: 343px;
-    left: 215px;
-    top: 375px;
 
     font-size: 24px;
     line-height: 28px;
@@ -116,10 +114,18 @@ header.sticky div a {
     width: 100%;
     height: 950px;
     background: #FFF;
+    position: relative;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.products .title {
+    position: absolute;
+    top: 80px;
+
+    font-size: 2.5em;
 }
 
 .products .card {
@@ -128,7 +134,13 @@ header.sticky div a {
     height: 420px;
     background: #122936;
     border-radius: 20px;
+
+    transition: 0.5s;
     overflow: hidden;
+}
+.products .card:hover {
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.75);
+    transform: translateY(-15px);
 }
 .products .card::before {
     content: '';
@@ -140,7 +152,7 @@ header.sticky div a {
     transform: skewY(345deg);
     transition: 0.5s;
 }
-.products .card:nth-child(2n)::before {
+.products .card:nth-child(1n)::before {
     background: #FFF;
 }
 .products .card:hover::before {
