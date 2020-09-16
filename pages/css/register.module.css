@@ -1,24 +1,16 @@
-
 * {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
+header {
+    padding: 0px 0px 0px 0px;
+    margin-left: calc(50% - 116px);
 }
 
-/* Section */
-
 section {
+    margin-left: 30%;
     width: 40%;
     height: 100%;
 }
@@ -57,23 +49,4 @@ button:hover {
     color: #035162;
     background: #FFF;
     border: 1px solid #035162;
-}
-/* Footer */
-
-footer {
-    width: calc(100% - 300px);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 175px;
-    background: #000;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 150px;
-}
-
-footer svg path {
-    fill: #FFF;
 }

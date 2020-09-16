@@ -1,0 +1,19 @@
+.sticky {
+    height: 60px;
+    background: #FFF;
+    border-bottom: 1px solid #E0E0E0;
+}
+.sticky svg {
+    height: 55px;
+    width: 200px;
+}
+.sticky a {
+    color: #000;
+}
+.sticky span {
+    border-color: #000;
+}
+.sticky div a {
+    margin: 0 15px;
+    font-size: 24px;
+}
